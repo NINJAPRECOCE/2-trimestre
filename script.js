@@ -1,44 +1,50 @@
 const caixaPrincipal = document.queryselector("caixa-principal")
 const caixaPerguntas = document.querySelector("caixa-perguntas")
 const caixaAlternativas = document.querySelector(".caixa-resultado")
-const caixaResultado = document.querySelector (".caixa-resultado");
-const textoResultado = document.querySelector =(".texto-resultado');
+const caixaResultado = document.querySelector (".caixa-resultado")
+const textoResultado = document.querySelector =(".texto-resultado")
                                                 
 const perguntas = [
   {
-    enunciado:"Pergunta1"
+    enunciado:"quem é mais calvo?",
     alternativas:[
-  "alternativas",
-  "alternativas 2",
-  }  
+  "hyronei",
+  "marcos",
+    ]
+  },
    {
-    enunciado:"Pergunta1"
+    enunciado:"voce é sigma ou clt?",
     alternativas:[
-  "alternativas",
-  "alternativas 2",
-  }  
+  "sigma",
+  "CLT",
+    ]
+  }, 
    {
-    enunciado:"Pergunta1"
+    enunciado:"bk ou mac?",
     alternativas:[
   "alternativas",
   "alternativas 2",
-  }  
+    ]
+  }, 
    {
-    enunciado:"Pergunta1"
+    enunciado:"Pergunta1",
     alternativas:[
   "alternativas",
   "alternativas 2",
-  }  
+    ]
+  }, 
    {
-    enunciado:"Pergunta1"
+    enunciado:"Pergunta1",
     alternativas:[
   "alternativas",
   "alternativas 2",
-  }  
+    ]
+  }, 
    {
-    enunciado:"Pergunta1"
+    enunciado:"Pergunta1",
     alternativas:[
   "alternativas",
   "alternativas 2",
-  }  
-]
+    ]
+  }, 
+];
