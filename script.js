@@ -8,8 +8,16 @@ const perguntas = [
   {
     enunciado:"quem é mais calvo?",
     alternativas:[
-  "hyronei",
-  "marcos",
+      {  
+ texto: "hyronei",
+  afirmação: "afirmação",
+      }
+      {
+      texto:"marcos" 
+  afirmação:"afirmaçao",
+      }
+      ]
+        
     ]
   },
    {
@@ -22,27 +30,45 @@ const perguntas = [
    {
     enunciado:"bk ou mac?",
     alternativas:[
-  "alternativas",
-  "alternativas 2",
+  "mac",
+  "bk",
+    ]
+  }, 
+   {
+    enunciado:"ficaria com o cr7?",
+    alternativas:[
+  "sim",
+  "não",
+    ]
+  }, 
+   {
+    enunciado:"bolsonaro ou lula?",
+    alternativas:[
+  "sim",
+  "não",
     ]
   }, 
    {
     enunciado:"Pergunta1",
     alternativas:[
-  "alternativas",
-  "alternativas 2",
-    ]
-  }, 
-   {
-    enunciado:"Pergunta1",
-    alternativas:[
-  "alternativas",
-  "alternativas 2",
-    ]
-  }, 
-   {
-    enunciado:"Pergunta1",
-    alternativas:[
+      let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
+mostraPergunta();
   "alternativas",
   "alternativas 2",
     ]
